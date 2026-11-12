@@ -30,7 +30,7 @@ export default function Sidebar({ currentTab, onSelectTab, mobileOpen, onCloseMo
             <div className="brand-logo">₹</div>
             <div className="brand-text">
               <span className="brand-title">ExpenseTracker</span>
-              <span className="brand-badge">Auspify</span>
+              {/* <span className="brand-badge">Auspify</span> */}
             </div>
           </div>
           <button

@@ -1,50 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
   --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
 
-  /* Color Palette */
-  --bg-app: #f8fafc;
-  --bg-card: #ffffff;
-  --bg-sidebar: #0f172a;
-  --bg-sidebar-hover: #1e293b;
-  --bg-sidebar-active: #334155;
+  /* Main backgrounds */
+  --bg-app: #FFF9F7;
+  --bg-card: #FFFFFF;
 
-  --border-color: #e2e8f0;
-  --border-focus: #6366f1;
+  /* Burgundy sidebar */
+  --bg-sidebar: #4A082A;
+  --bg-sidebar-hover: #641039;
+  --bg-sidebar-active: #7C0E44;
 
-  --text-main: #0f172a;
-  --text-muted: #64748b;
-  --text-light: #94a3b8;
-  --text-sidebar: #cbd5e1;
+  /* Borders */
+  --border-color: #F1DDE2;
+  --border-focus: #7C0E44;
 
-  /* Accents */
-  --color-primary: #4f46e5;
-  --color-primary-hover: #4338ca;
-  --color-primary-light: #eef2ff;
+  /* Typography */
+  --text-main: #351322;
+  --text-muted: #8D6B78;
+  --text-light: #B99AA5;
+  --text-sidebar: #F8DDE6;
 
-  --color-income: #10b981;
-  --color-income-light: #ecfdf5;
-  --color-expense: #ef4444;
-  --color-expense-light: #fef2f2;
+  /* Primary brand colors */
+  --color-primary: #7C0E44;
+  --color-primary-hover: #610B35;
+  --color-primary-light: #FBE8ED;
 
-  --color-warning: #f59e0b;
-  --color-warning-light: #fffbeb;
+  /* Secondary palette */
+  --color-secondary: #D49A9A;
+  --color-secondary-light: #F7E5E5;
+  --color-blush: #FFCED8;
+  --color-blush-light: #FFF0F3;
 
+  /* Income and expense */
+  --color-income: #27845B;
+  --color-income-light: #E8F5EE;
+  --color-expense: #C94C62;
+  --color-expense-light: #FCECEF;
+
+  /* Additional status colors */
+  --color-warning: #C58A35;
+  --color-warning-light: #FFF5E5;
+
+  /* Border radius */
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 14px;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.06);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(76, 15, 43, 0.05);
+  --shadow-md: 0 4px 12px rgba(76, 15, 43, 0.07);
+  --shadow-lg: 0 10px 25px rgba(76, 15, 43, 0.10);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -56,7 +75,10 @@ body {
   line-height: 1.5;
 }
 
-input, button, select, textarea {
+input,
+button,
+select,
+textarea {
   font-family: inherit;
 }
 
@@ -69,4 +91,9 @@ button {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+::selection {
+  background: #FFCED8;
+  color: #4A082A;
 }
